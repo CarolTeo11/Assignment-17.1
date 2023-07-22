@@ -66,11 +66,11 @@ Available at: [pdf] http://hdl.handle.net/1822/14838
 
 First, I digitised and transformed the non-numeric columns to numeric ones.  For fields with “yes” and “no” option, I replaced them with 1 and 0 respectively.  For the other fields such as “marital” and “job” data, they were digitised using LabelEncoder.  
 
-<img width="547" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/dabd0774-f630-4a02-89fd-3d56839b1ac3">
+<img width="700" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/dabd0774-f630-4a02-89fd-3d56839b1ac3">
 
 Since the fields ‘day’ and ‘month’ were already featured in ‘pdays’, they were not included as features.  All the numerical fields and ‘y’ were also dropped to form the dataframe for X.  The data was then divided into training set and development sets in the ratio of 70-30. 
 
-<img width="544" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/683a2f2c-25d4-4b6c-8c4b-2eef8cf6dd17">
+<img width="700" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/683a2f2c-25d4-4b6c-8c4b-2eef8cf6dd17">
 
 ## Step 4: Modelling
 
@@ -78,19 +78,19 @@ Since the fields ‘day’ and ‘month’ were already featured in ‘pdays’,
 
 First, I split the data into 2 groups, one containing customers who were previously contacted; the other containing customers who weren’t. It was observed that 18% of the customers were contacted in the previous campaign.  
 
-<img width="542" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/ca9462fd-45fa-4f7e-ad96-2463d4faae28">
+<img width="700" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/ca9462fd-45fa-4f7e-ad96-2463d4faae28">
 
 Based on the results, customers who were contacted during the previous campaign had a much higher chance of subscribing to the term deposit.  Hence, it was important that efforts be targeted at customers who have high probability of signing up for the term deposit.  
 
-<img width="289" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/e7697c3a-a73c-44fc-8aee-90c502c6ffe1">
+<img width="350" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/e7697c3a-a73c-44fc-8aee-90c502c6ffe1">
 
 I also looked at the count of customers in each group and it was clear that it is not possible to contact all customers and hence, there is a need to target the effort at only potential customers.  
 
-<img width="302" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/fb863a2d-166a-4ea3-bdea-38af541b934e">
+<img width="400" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/fb863a2d-166a-4ea3-bdea-38af541b934e">
 
 Since this is a classical classification problem, 4 different models were used, namely logistic regression, decision tree, k nearest neighbors and support vector machine.  
 
-<img width="549" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/ca5d1c5b-6d11-497b-bc4a-64a7105eb032">
+<img width="700" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/ca5d1c5b-6d11-497b-bc4a-64a7105eb032">
 
 ## Step 5: Evaluation 
 
@@ -98,24 +98,24 @@ Since this is a classical classification problem, 4 different models were used, 
 
 The accuracy scores for the training and development sets, fitting time and were recorded.
 
-<img width="443" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/9d733595-ff58-420b-8408-20dd52438eb8">
+<img width="700" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/9d733595-ff58-420b-8408-20dd52438eb8">
 
 From the above, logistic regression recorded the best accuracy score for the development set, followed by the SVM, KNN and Decision Tree.  However, the KNN took the shortest time to fit the model, followed by the Decision Tree, Logistic Regression and SVM.  Since the fitting times were all tolerable and the accuracy score was the measure of effectiveness, the Logistic Regression Model appears to be the best model.  In addition, the workload for the Logistic Regression was 4.5% which is way lower than the original 18%.  The confusion matrix of the 4 models are shown below:
 
-<img width="216" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/fc4de7f5-ce2a-435b-8243-532ea896bd43">
+<img width="350" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/fc4de7f5-ce2a-435b-8243-532ea896bd43">
 
-![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/4f98ed40-0df2-48fc-b6d1-723f5b602431)
+<img width="350" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/a2d3c523-0057-404f-b3b1-9abcd8eaaa82">
 
-![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/cfa57ad4-38f0-4911-ad1d-f79a905f03a4)
+<img width="350" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/8eef0558-76c4-42bb-b5e3-fba591aa5dbe">
 
-![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/1f09612d-9831-4ebc-adeb-b931d11ff8ee)
+<img width="350" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/b8620feb-a4e1-4def-87ff-b1b0c1fbfb7d">
+
 
 ### Sensitivity analysis: Analysing without data from customer who were not contacted and did not subscribe to the term deposit.  
 
 As it was hard to tell if the group of customers who were not contacted and did not subscribe to the term deposit were indeed not interested in the term deposit or was simply unaware of the campaign, I decided to rerun the model without the group of customers who were not contacted and did not subscribe to the term deposit.   To re-use the code, I filtered the data to the sample set that I wanted and re-run the model.  The results are shown below.  
 
-![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/3a4ddf2b-6116-4dba-bcad-a84f02128971)
-
+<img width="700" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/678ad7e5-e1ab-4a37-91d6-439113e68569">
 
 Here, the Logistic Regression continues to be the best model based on its test score.  However, the Logistic Regression has the highest fitting time and the workload was high at 45.7%.  It must be noted that the workload ended up higher as the percentage of success was way higher in this sample set.  
 
