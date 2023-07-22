@@ -98,26 +98,26 @@ Since this is a classical classification problem, 4 different models were used, 
 
 The accuracy scores for the training and development sets, fitting time and were recorded.
 
-![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/43f4908d-02d3-49a4-afa4-80e12eead442)
+<img width="443" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/9d733595-ff58-420b-8408-20dd52438eb8">
 
-From the above, logistic regression recorded the best accuracy score for the development set, followed by the SVM, KNN and Decision Tree.  However, the KNN took the shortest time to fit the model, followed by the Decision Tree, Logistic Regression and SVM.  Since the fitting times were all tolerable and the accuracy score was the measure of effectiveness, the Logistic Regression Model appears to be the best model.  In addition, the workload for the Logistic Regression was 3.5% which is way lower than the original 18%.  The confusion matrix of the 4 models is shown below:
+From the above, logistic regression recorded the best accuracy score for the development set, followed by the SVM, KNN and Decision Tree.  However, the KNN took the shortest time to fit the model, followed by the Decision Tree, Logistic Regression and SVM.  Since the fitting times were all tolerable and the accuracy score was the measure of effectiveness, the Logistic Regression Model appears to be the best model.  In addition, the workload for the Logistic Regression was 4.5% which is way lower than the original 18%.  The confusion matrix of the 4 models are shown below:
 
-<img width="273" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/867a38f4-8b27-4da3-a490-80e4c0ef0b77">
+<img width="216" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/fc4de7f5-ce2a-435b-8243-532ea896bd43">
 
-<img width="272" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/7b404b4a-89a6-4b2d-8f52-eb4814ff54ab">
+![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/4f98ed40-0df2-48fc-b6d1-723f5b602431)
 
-<img width="268" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/db23fb84-5b9f-475a-a663-1872bb6400c6">
+![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/cfa57ad4-38f0-4911-ad1d-f79a905f03a4)
 
-<img width="275" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/dd1ec428-f002-452b-925f-1ac8bf0f884b">
-
+![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/1f09612d-9831-4ebc-adeb-b931d11ff8ee)
 
 ### Sensitivity analysis: Analysing without data from customer who were not contacted and did not subscribe to the term deposit.  
 
 As it was hard to tell if the group of customers who were not contacted and did not subscribe to the term deposit were indeed not interested in the term deposit or was simply unaware of the campaign, I decided to rerun the model without the group of customers who were not contacted and did not subscribe to the term deposit.   To re-use the code, I filtered the data to the sample set that I wanted and re-run the model.  The results are shown below.  
 
-![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/6e3658d8-57c1-4a23-ad12-2bc73d4d52a9)
+![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/3a4ddf2b-6116-4dba-bcad-a84f02128971)
 
-Here, the Logistic Regression continues to be the best model based on its test score.  However, the Logistic Regression has the highest fitting time and the workload was high at 45%.  It must be noted that the workload ended up higher as the percentage of success was way higher in this sample set.  
+
+Here, the Logistic Regression continues to be the best model based on its test score.  However, the Logistic Regression has the highest fitting time and the workload was high at 45.7%.  It must be noted that the workload ended up higher as the percentage of success was way higher in this sample set.  
 
 ## Step 6: Deployment
 
