@@ -102,7 +102,14 @@ The accuracy scores for the training and development sets, fitting time and were
 
 From the above, logistic regression recorded the best accuracy score for the development set, followed by the SVM, KNN and Decision Tree.  However, the KNN took the shortest time to fit the model, followed by the Decision Tree, Logistic Regression and SVM.  Since the fitting times were all tolerable and the accuracy score was the measure of effectiveness, the Logistic Regression Model appears to be the best model.  In addition, the workload for the Logistic Regression was 3.5% which is way lower than the original 18%.  The confusion matrix of the 4 models is shown below:
 
-![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/f4cfe938-4d5a-4948-91c8-4917897df7e2)
+<img width="273" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/867a38f4-8b27-4da3-a490-80e4c0ef0b77">
+
+<img width="272" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/7b404b4a-89a6-4b2d-8f52-eb4814ff54ab">
+
+<img width="268" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/db23fb84-5b9f-475a-a663-1872bb6400c6">
+
+<img width="275" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/dd1ec428-f002-452b-925f-1ac8bf0f884b">
+
 
 ### Sensitivity analysis: Analysing without data from customer who were not contacted and did not subscribe to the term deposit.  
 
