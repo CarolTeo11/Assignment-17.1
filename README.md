@@ -66,11 +66,11 @@ Available at: [pdf] http://hdl.handle.net/1822/14838
 
 First, I digitised and transformed the non-numeric columns to numeric ones.  For fields with “yes” and “no” option, I replaced them with 1 and 0 respectively.  For the other fields such as “marital” and “job” data, they were digitised using LabelEncoder.  
 
-![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/0f322a81-7dcf-47ab-a142-0910c601298e)
+<img width="547" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/dabd0774-f630-4a02-89fd-3d56839b1ac3">
 
 Since the fields ‘day’ and ‘month’ were already featured in ‘pdays’, they were not included as features.  All the numerical fields and ‘y’ were also dropped to form the dataframe for X.  The data was then divided into training set and development sets in the ratio of 70-30. 
 
-![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/9f85be7b-6712-4f96-b493-4b647c5d381b)
+<img width="544" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/683a2f2c-25d4-4b6c-8c4b-2eef8cf6dd17">
 
 ## Step 4: Modelling
 
@@ -78,19 +78,19 @@ Since the fields ‘day’ and ‘month’ were already featured in ‘pdays’,
 
 First, I split the data into 2 groups, one containing customers who were previously contacted; the other containing customers who weren’t. It was observed that 18% of the customers were contacted in the previous campaign.  
 
-![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/cc03dd61-9e1d-482b-9a71-b885f2aeb1b2)
+<img width="542" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/ca9462fd-45fa-4f7e-ad96-2463d4faae28">
 
 Based on the results, customers who were contacted during the previous campaign had a much higher chance of subscribing to the term deposit.  Hence, it was important that efforts be targeted at customers who have high probability of signing up for the term deposit.  
 
-![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/99646438-645b-4935-bf01-8609c3433ab9)
+<img width="289" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/e7697c3a-a73c-44fc-8aee-90c502c6ffe1">
 
 I also looked at the count of customers in each group and it was clear that it is not possible to contact all customers and hence, there is a need to target the effort at only potential customers.  
 
-![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/e8bbfc88-1b4f-47e7-9aaf-f76c0f14e823)
+<img width="302" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/fb863a2d-166a-4ea3-bdea-38af541b934e">
 
 Since this is a classical classification problem, 4 different models were used, namely logistic regression, decision tree, k nearest neighbors and support vector machine.  
 
-![image](https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/41db2bee-1a8b-41bb-8639-4074c2e2de93)
+<img width="549" alt="image" src="https://github.com/CarolTeo11/Assignment-17.1/assets/130137674/ca5d1c5b-6d11-497b-bc4a-64a7105eb032">
 
 ## Step 5: Evaluation 
 
